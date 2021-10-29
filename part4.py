@@ -13,4 +13,7 @@ possibletriangle(8, 12, 13)
 """
 
 def possibletriangle(side1, side2, side3): #side1, side2, and side3 will all be integers
-  pass #delete this line when you start typing your code here
+  if(side1 + side2 <= side3 or side2+side3 <= side1 or side1+side3 <= side2):
+    return False
+  else:
+    return True
